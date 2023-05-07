@@ -1,0 +1,26 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Blog>
+
+<div class="con-bot">
+    @foreach(var x in Model)
+    {
+        <div class="left">
+        <div class="bot-left">
+            <img src="@x.BlogImage" alt="" style="height:180px; width:100%" />
+        </div>
+        <div class="left-text">
+            <h4>@x.Baslik</h4>
+            <span class="doller">@x.Tarih.ToString("dd.MM.yyyy")</span>
+            <p>@x.Aciklama.Substring(0, 100)</p> @*0'dan 100'e kadar olan karakterleri al.*@
+            <p><a href="/Blog/BlogDetay/@x.ID"><span class="read">Devamını Oku...</span></a></p>
+        </div>
+    </div>
+    }
+
+    @* partial2 içerisinde default u çağır *@
+    @Html.Action("Partial2", "Default")  
+
+    
+    <div class="clear"></div>
+</div>
+
