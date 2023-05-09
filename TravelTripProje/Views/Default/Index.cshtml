@@ -4,41 +4,31 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_TestLayout.cshtml";
 }
-
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 <head>
-   
     <link href="~/web/css/slider.css" rel="stylesheet" type="text/css" media="all" />
     <script src="~/web/js/jquery.min.js"></script>
     <script src="~/web/js/responsiveslides.min.js"></script>
-
     <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      // Slideshow 1
-      $("#slider1").responsiveSlides({
-         auto: true,
-		 nav: true,
-		 speed: 500,
-		 namespace: "callbacks",
-      });
-    });
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 1
+            $("#slider1").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+            });
+        });
     </script>
 </head>
 <body>
-
     <div class="header-banner">
         <div class="wrap">
             <div class="banner">
                 <div class="indent">
-                    <h2  style="margin-left:80px" class="indent-left margin-bot">Tatil & Seyahat Blogum</h2>
+                    <h2 style="margin-left:80px" class="indent-left margin-bot">Tatil & Seyahat Blogum</h2>
                     <div class="banner-left">
                         <div class="con-text">
                             <div class="grid1-img">
@@ -79,16 +69,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="clear"></div>
                     </div>
                     <div class="header_bottom_right_images">
-
                         <div class="slider">
                             <ul class="rslides" id="slider1">
-                                 @foreach(var x in Model)
-                                 {
-                                <li><img src="@x.BlogImage" alt="" style="width:650px; height:400px"></li>
-                                @*<li><img src="~/web/images/img2.jpg" alt=""></li>
-                                    <li><img src="~/web/images/img3.jpg" alt=""></li>
-                                    <li><img src="~/web/images/img4.jpg" alt=""></li>*@
-                                 }
+                                @foreach (var x in Model)
+                                {
+                                    <li><img src="@x.BlogImage" alt="" style="width:650px; height:400px"></li>
+                                    @*<li><img src="~/web/images/img2.jpg" alt=""></li>
+                                        <li><img src="~/web/images/img3.jpg" alt=""></li>
+                                        <li><img src="~/web/images/img4.jpg" alt=""></li>*@
+                                }
                             </ul>
                         </div>
                     </div>
@@ -109,9 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         Sağlıklı, mutlu ve huzurlu günler dilerim...
                     </p>
                 </div>
-
-                @Html.Action("Partial1","Default")
-
+                @Html.Action("Partial1", "Default")
                 <div class="grids">
                     <div class="box1">
                         @Html.Action("Partial3", "Default")
@@ -122,7 +109,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </div>
     </div>
-
 </body>
 </html>
 

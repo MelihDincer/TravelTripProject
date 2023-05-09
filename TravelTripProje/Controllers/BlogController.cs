@@ -9,7 +9,6 @@ namespace TravelTripProje.Controllers
 {
     public class BlogController : Controller
     {
-        // GET: Blog
         Context c = new Context();
         BlogYorum by = new BlogYorum();
         public ActionResult Index()
@@ -20,9 +19,6 @@ namespace TravelTripProje.Controllers
             //OrderByDescending(x => x.ID) metodunu kullanarak ID değerine göre descending(en sondan başa doğru) olarak sıraladık.
             return View(by);
         }
-
-        
-
         public ActionResult BlogDetay(int id)
         {
             //var blogbul = c.Blogs.Where(x => x.ID == id).ToList();
@@ -30,17 +26,12 @@ namespace TravelTripProje.Controllers
             by.Deger2 = c.Yorumlars.Where(x => x.Blogid == id).ToList();
             return View(by);
         }
-
-
-
         [HttpGet]
         public PartialViewResult YorumYap(int id)
         {
             ViewBag.deger = id;
             return PartialView();
         }
-       
-
         [HttpPost]
         public PartialViewResult YorumYap(Yorumlar y)
         {
@@ -49,6 +40,5 @@ namespace TravelTripProje.Controllers
             c.SaveChanges();
             return PartialView();
         }
-
     }
 }
