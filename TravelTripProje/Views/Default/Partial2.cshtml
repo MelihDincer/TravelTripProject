@@ -4,34 +4,14 @@
 @foreach (var x in Model)
 {
     <div class="right">
-
-
         <div class="bot-left">
             <img src="@x.BlogImage" alt="" style="height:180px; width:100%" />
         </div>
         <div class="left-text">
-
             <h4>@x.Baslik</h4>
             <span class="doller">@x.Tarih.ToString("dd.MM.yyyy")</span>
-            <p>@x.Aciklama.Substring(0,110)</p>
+            <p>@x.Aciklama.Substring(0, 110)</p>
             <p><a href="#"><span class="read">Devamını Oku...</span></a></p>
         </div>
     </div>
 }
-
-
-
-
-
-@*<div class="right">
-        <div class="bot-left">
-            <img src="~/web/images/pic2.jpg" alt="" />
-        </div>
-        <div class="left-text">
-
-            <h4>DENEME</h4>
-            <span class="doller">$924.99</span>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismo</p>
-            <p><a href="#"><span class="read">Read More >></span></a></p>
-        </div>
-    </div>*@

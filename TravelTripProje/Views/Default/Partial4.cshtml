@@ -6,67 +6,14 @@
     <div class="box-left">
         @foreach (var x in Model)
         {
-    <div class="bot-img">
-        <img src="@x.BlogImage" alt="" />
-    </div>
-        <div class="bot-desc">
-            <p>@x.Aciklama.Substring(0,75)</p>
-        </div>
-        <div class="clear"></div>
-        }
-    </div>
-        @Html.Action("Partial5","Default")
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-@*<div class="padding1">
-    <h4>En Beğendiğim Yerler</h4>
-    <div class="box-left">
-        @foreach (var x in Model)
-        {
             <div class="bot-img">
-                <img src="~/web/images/pic3.jpg" alt="" />
+                <img src="@x.BlogImage" alt="" />
             </div>
             <div class="bot-desc">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
-            </div>
-            <div class="clear"></div>
-            <div class="bot-img">
-                <img src="~/web/images/pic7.jpg" alt="" />
-            </div>
-            <div class="bot-desc">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+                <p>@x.Aciklama.Substring(0, 75)...</p>
             </div>
             <div class="clear"></div>
         }
-
-        
-    <div class="box1-left">
-        <div class="bot-img">
-            <img src="~/web/images/pic9.jpg" alt="" />
-        </div>
-        <div class="bot-desc1">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
-        </div>
-        <div class="bot-img">
-            <img src="~/web/images/pic7.jpg" alt="" />
-        </div>
-        <div class="bot-desc">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
-        </div>
-        <div class="clear"></div>
-
     </div>
+    @Html.Action("Partial5", "Default")
 </div>
-<div class="clear"></div>
-    </div>*@
