@@ -1,13 +1,10 @@
 ﻿@model TravelTripProje.Models.Siniflar.Blog
-
 @{
     ViewBag.Title = "BlogGetir";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
 <h2>Blog Güncelleme Sayfası</h2>
 <br />
-
 @using (Html.BeginForm("BlogGuncelle", "Admin", FormMethod.Post)) // BlogGuncelle actionresult devreye girdiğinde çalışacak, BlogGüncelle nerede? (AdminController içinde), ne zaman çalışacak? (sayfada bir butona tıkladığında)
 {
     @Html.LabelFor(x => x.ID)
@@ -23,7 +20,7 @@
     @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.Aciklama)
-    @Html.TextAreaFor(x => x.Aciklama, 15, 1, new { @class = "form-control" })
+    @Html.TextAreaFor(x => x.Aciklama, 15, 1, new { @class = "form-control" }) //15 satır 1 sütundan oluşan bir textarea oluşturuldu.
     <br />
     <button class="btn btn-success">Blog Güncelle</button>
 }

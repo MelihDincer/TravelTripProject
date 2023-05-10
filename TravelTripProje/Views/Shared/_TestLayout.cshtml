@@ -1,8 +1,6 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -14,7 +12,6 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <script src="js/jquery.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
-
     <script>
         // You can also use "$(window).load(function() {"
         $(function () {
@@ -29,32 +26,31 @@
     </script>
 </head>
 <body>
-<div class="header">
-<div class="wrap">
-<div class="logo"><a href="index.html"><img src="~/web/images/logo.png" alt="" /></a></div>
-   <div class="con-right">
-			<div class="grid1-l-img">
-				<img src="~/web/images/contact.png" alt="">
-			</div>
-            <div class="grid1-l-desc">
-                <p>Whatsapp : +91 00000-55555</p>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo"><a href="index.html"><img src="~/web/images/logo.png" alt="" /></a></div>
+            <div class="con-right">
+                <div class="grid1-l-img">
+                    <img src="~/web/images/contact.png" alt="">
+                </div>
+                <div class="grid1-l-desc">
+                    <p>Whatsapp : +91 00000-55555</p>
+                </div>
+                <div>
+                    <a href="/Admin/Index" style="width:141px; height:41px" class="btn btn-info">Admin Girişi</a>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div>
-                <a href="/Admin/Index" style="width:141px; height:41px" class="btn btn-info">Admin Girişi</a>
-            </div>
-
-			<div class="clear"></div>
-	</div>
-
-    <div class="clear"></div>
-     </div>
-</div>
-<div class="header-bottom">
-    	<div class="wrap">
-    		<ul id="nav">
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="wrap">
+            <ul id="nav">
                 <li><a href="/Default/Index/">Anasayfa</a></li>
                 <li><a class="hsubs" href="/About/Index">Hakkımızda</a></li>
-                <li><a class="hsubs" href="destinations.html">Rehber</a>
+                <li>
+                    <a class="hsubs" href="destinations.html">Rehber</a>
                     <ul class="subs">
                         <li><a href="#">Oteller</a></li>
                         <li><a href="#">Restoranlar</a></li>
@@ -63,21 +59,18 @@
                 </li>
                 <li><a class="hsubs" href="/Blog/Index">Blogum</a></li>
                 <li><a href="contact.html">İletişim</a></li>
-               
-        </ul>
-       </div>
-</div>
-
-     <div class"content">
-         @RenderBody()
-      	</div>
-
-<div class="footer-bottom">
-<div class="wrap">	
-	<div class="copy">
-        <p>&copy; 2022 Tatil-Seyahat. Tüm Hakları Saklıdır | Design By <a href="http://w3layouts.com">W3Layouts</a></p>
-	</div>
- </div>
-</div>
+            </ul>
+        </div>
+    </div>
+    <div class"content">
+        @RenderBody()
+    </div>
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copy">
+                <p>&copy; 2022 Tatil-Seyahat. Tüm Hakları Saklıdır | Design By <a href="http://w3layouts.com">W3Layouts</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

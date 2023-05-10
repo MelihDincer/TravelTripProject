@@ -4,7 +4,6 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
 <h2>Blog Listesi</h2>
 <br />
 <table class="table table-bordered ">
@@ -15,7 +14,6 @@
         <th>GÜNCELLE</th>
         <th>DETAYLAR</th>
     </tr>
-
     @foreach(var x in Model) 
     {
     <tr>
@@ -26,8 +24,5 @@
         <td><a href="#" class="btn btn-success">Detaylar</a></td>
     </tr>
     }
-
 </table>
-
 <a href="/Admin/YeniBlog/" class="btn btn-primary">Yeni Blog</a>
-
