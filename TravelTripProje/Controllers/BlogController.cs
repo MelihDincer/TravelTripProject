@@ -29,7 +29,7 @@ namespace TravelTripProje.Controllers
         [HttpGet]
         public PartialViewResult YorumYap(int id)
         {
-            ViewBag.deger = id;
+            ViewBag.deger = id; //viewbag ile id değerini deger adını verdiğimiz değişkene atadık.
             return PartialView();
         }
         [HttpPost]
