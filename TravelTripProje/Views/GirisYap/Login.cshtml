@@ -21,16 +21,17 @@
         </div>
         <div class="design-w3l">
             <div class="mail-form-agile">
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="Kullanıcı Adınız..." required="" />
-                    <input type="password" name="password" class="padding" placeholder="Şifreniz..." required="" />
+                @using (Html.BeginForm("Login", "GirisYap", FormMethod.Post))
+                {
+                    <input type="text" name="Kullanici" placeholder="Kullanıcı Adınız..." required="" />
+                    <input type="password" name="Sifre" class="padding" placeholder="Şifreniz..." required="" />
                     <input type="submit" value="Giriş Yap">
-                </form>
+                }
             </div>
             <div class="clear"> </div>
         </div>
         <div class="footer">
-            <p>© 2017  Master  Login form. All Rights Reserved | Design by  <a href="https://w3layouts.com/">  w3layouts </a></p>
+            <p>© 2023  Master  Login form. Tüm hakları saklıdır | Design by  <a href="https://w3layouts.com/">  w3layouts </a></p>
         </div>
     </div>
 </body>
