@@ -10,6 +10,7 @@ namespace TravelTripProje.Controllers
     public class AdminController : Controller
     {
         Context c = new Context();
+        [Authorize] //Web.config dosyasında 28.satırda yazdığımız kod sayesinde burada "Authorize" keywordünü kullanarak, admin tarafındaki herhangi bir sayfadan projeyi başlattığımızda otomatik olarak login sayfasına yönlendirecektir.
         public ActionResult Index()
         {
             var degerler = c.Blogs.ToList();
