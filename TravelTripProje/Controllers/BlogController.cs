@@ -37,7 +37,6 @@ namespace TravelTripProje.Controllers
         {
             c.Yorumlars.Add(y);
             c.SaveChanges();
-            c.SaveChanges();
             return PartialView();
         }
     }
