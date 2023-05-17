@@ -3,15 +3,14 @@
 
 <div class="box1-left">
 
-   @foreach(var x in Model)
-   {
-    <div class="bot-img">
-        <img src="@x.BlogImage" alt="" />
-    </div>
-    <div class="bot-desc1">
-        <p>@x.Aciklama.Substring(0,60) </p>
-    </div>
-    <div class="clear"></div>
-   }
+    @foreach (var x in Model)
+    {
+        <div class="bot-img">
+            <img src="@x.BlogImage" alt="" />
+        </div>
+        <div class="bot-desc1">
+            <p>@x.Aciklama.Substring(0, 60) </p>
+        </div>
+        <div class="clear"></div>
+    }
 </div>
-

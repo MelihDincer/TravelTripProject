@@ -14,6 +14,5 @@ namespace TravelTripProje.Models.Siniflar
         public DbSet<Hakkimizda>Hakkimizdas { get; set; }
         public DbSet<iletisim>iletisims { get; set; }
         public DbSet<Yorumlar>Yorumlars { get; set; }
-
     }
 }
